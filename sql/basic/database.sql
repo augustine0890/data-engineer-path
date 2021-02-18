@@ -33,3 +33,16 @@ LIMIT 3;
 SELECT *
 FROM artist
 LIMIT 5;
+
+-- Get the first five rows from genre
+SELECT *
+FROM genre
+LIMIT 5;
+
+SELECT customer_id, first_name, last_name, email 
+FROM customer 
+LIMIT 5;
+
+SELECT city, state, country, postal_code
+  FROM employee
+ LIMIT 20;

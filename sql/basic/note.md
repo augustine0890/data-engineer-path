@@ -9,3 +9,7 @@
 - `SELECT DISTINCT` to remove duplicate values in a column.
 - SQL uses the following order of precedence:
     - `FROM`, `SELECT`/`SELECT DIST`, `LIMIT`.
+
+## Coding Style
+- Comments are readable messages in code that SQL ignores.
+- Reserved words have a special function and shouldn't be used for anything else.
