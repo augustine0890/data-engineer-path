@@ -18,3 +18,18 @@ SELECT company_name FROM companies;
 
 SELECT net_worth, ceo
 FROM companies;
+
+SELECT *
+FROM invoice_line
+LIMIT 10;
+
+SELECT DISTINCT unit_price
+FROM invoice_line;
+
+SELECT invoice_id, track_id
+FROM invoice_line
+LIMIT 3;
+
+SELECT *
+FROM artist
+LIMIT 5;
