@@ -18,3 +18,13 @@
     - Colors are represented by three values between 0 and 255 (green, red, blue)
     - One way to represent the color is a tuple (213, 111, 56) or hexadecimal `d56f38`
 - A fihe system has three kinds of permissions: read, write, execute
+
+## Encodings and Representing Text
+- ASCII is the encoding upon which most encodings are built. It's able to represent a total of 128 characters.
+- In the case of textual data: `ASCII encoding`
+    - `A` is represented by `65`
+    - `B` is represented by `66`
+    - `C` is represented by `67`
+- ASCII uses 7 bits to represent the characters. The characters are encoded using 8 bits (1 byte) rather than 7 by adding a `0` bit to the left.
+- __Unicode__ is not actually an encoding. It is a very big table with 1,114,112 entries that maps symbols to codes.
+- All textual data is represented as a sequence of bytes in a computer. In order to read it we need to know which encodings was used.
