@@ -35,3 +35,16 @@
     - `rb`: read the bytes of the file
     - `wb`: write bytes to the file
 - A context manager provided a better way to open files as it automatically closes them for us afterwards.
+
+## Memory and Disk Usage
+- Two's complement representation makes it possible to represent both positive and negative numbers using a fixed number of bits.
+- Performing computations with fixed bit length value is much more efficient than using Python's `int` object. Processors are designed to have built-in circuits that handle arithmetic operations on these 32 or 64 bit integers.
+- Python's `int` values occupy much more memory than pure two's complement values.
+- Python requires 3-4 times more memory than traditional programming languages to store the same amount of integer values.
+- Overflow occurs when the result of a computation would yield a number that is outside of the range that those numbers can represent.
+- The values of the digits in the two's complement representation is the same except the leftmost is negated.
+- With n bits, two's complement representation can represent integers from $-2^{n-1}$ to $-2^{n-1} - 1$
+- Python will use one of three encodings to store strings in memory:
+    - 1 byte per character (Latin-1 encoding)
+    - 2 bytes per character (UCS-2 encoding)
+    - 4 bytes per character (UCS-4 encoding)
