@@ -28,3 +28,10 @@
 - ASCII uses 7 bits to represent the characters. The characters are encoded using 8 bits (1 byte) rather than 7 by adding a `0` bit to the left.
 - __Unicode__ is not actually an encoding. It is a very big table with 1,114,112 entries that maps symbols to codes.
 - All textual data is represented as a sequence of bytes in a computer. In order to read it we need to know which encodings was used.
+
+## Reading and Writing to File
+- The `open()` function offers several open modes. Add a `'b'` (which stands for bytes) after the `'r'` or `'w'` in mode. The function will read (or write) it as pure bytes and without trying to decode its contents into a human readable string.
+    - `a`: append data to the end of the file
+    - `rb`: read the bytes of the file
+    - `wb`: write bytes to the file
+- A context manager provided a better way to open files as it automatically closes them for us afterwards.
